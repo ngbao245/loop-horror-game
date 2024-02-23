@@ -13,7 +13,7 @@ public class camBob : MonoBehaviour
         {
             walking = true;
             cameraAnim.ResetTrigger("idle");
-            cameraAnim.ResetTrigger("sprint");
+            cameraAnim.ResetTrigger("run");
             cameraAnim.SetTrigger("walk");
             if (walking == true)
             {
@@ -21,14 +21,14 @@ public class camBob : MonoBehaviour
                 {
                     cameraAnim.ResetTrigger("walk");
                     cameraAnim.ResetTrigger("idle");
-                    cameraAnim.SetTrigger("sprint");
+                    cameraAnim.SetTrigger("run");
                 }
             }
         }
         else
         {
             cameraAnim.ResetTrigger("walk");
-            cameraAnim.ResetTrigger("sprint");
+            cameraAnim.ResetTrigger("run");
             cameraAnim.SetTrigger("idle");
             walking = false;
         }
