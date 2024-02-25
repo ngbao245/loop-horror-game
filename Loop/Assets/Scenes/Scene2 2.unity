@@ -190,9 +190,64 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!23 &329988289 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1876678487220535667, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+  m_PrefabInstance: {fileID: 6860189395985817959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &406354862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 279799968553597003, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+  m_PrefabInstance: {fileID: 6860189395985817959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &406354866 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3032282323588535913, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+  m_PrefabInstance: {fileID: 6860189395985817959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &406354867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406354862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20cbb06970e7c634c8d8db63007197c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intText: {fileID: 1189043637}
+  light: {fileID: 713412586}
+  toggle: 1
+  interactable: 0
+  lightBulb: {fileID: 329988289}
+  offlight: {fileID: 2100000, guid: b7cff6da8634fd14794e56ca84be65b9, type: 2}
+  onlight: {fileID: 2100000, guid: f0af98401f28d0a4e967d10d5e8e7eb9, type: 2}
+  lightSwitchSound: {fileID: 0}
+  switchAnim: {fileID: 406354866}
+  myLight: {fileID: 713412587}
+  maxInterval: 0.05
+  maxFlicker: 0.3
+  maxOffDelay: 0.5
 --- !u!108 &705507994 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 7650350149551817872, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+  m_PrefabInstance: {fileID: 6860189395985817959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &713412586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3437565685325667611, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+  m_PrefabInstance: {fileID: 6860189395985817959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &713412587 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 5017401954829613460, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+  m_PrefabInstance: {fileID: 6860189395985817959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1189043637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5428586776137587661, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
   m_PrefabInstance: {fileID: 6860189395985817959}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6860189395985817959
@@ -259,6 +314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene2.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7360455226953561171, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7650350149551817872, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -314,6 +373,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6096378762630043684, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 140276747}
+    - targetCorrespondingSourceObject: {fileID: 279799968553597003, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 406354867}
   m_SourcePrefab: {fileID: 100100000, guid: 0913d63074d03eb48bbf3660d3a7076d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
