@@ -1713,7 +1713,6 @@ GameObject:
   - component: {fileID: 1504367119549592453}
   - component: {fileID: 7717680277104012622}
   - component: {fileID: 9118974017633899778}
-  - component: {fileID: 4835564005027754535}
   m_Layer: 0
   m_Name: TimsAssets_Door (4)
   m_TagString: Untagged
@@ -1786,24 +1785,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 1
---- !u!114 &4835564005027754535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5805416293356593319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f669775d04829bd48919a4a9a2982464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intText: {fileID: 0}
-  key: {fileID: 0}
-  lockedText: {fileID: 0}
-  interactable: 0
-  toggle: 0
-  doorAnim: {fileID: 7717680277104012622}
 --- !u!1 &6343065338040168531
 GameObject:
   m_ObjectHideFlags: 0
