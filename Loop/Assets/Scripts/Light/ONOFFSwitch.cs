@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ONOFFSwitch : MonoBehaviour
@@ -6,7 +7,7 @@ public class ONOFFSwitch : MonoBehaviour
     public bool toggle = true, interactable;
     public Renderer lightBulb;
     public Material offlight, onlight;
-    public AudioSource lightSwitchSound;
+    public AudioSource sound;
     public Animator switchAnim;
 
     void OnTriggerStay(Collider other)
@@ -32,6 +33,7 @@ public class ONOFFSwitch : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 toggle = !toggle;
+                sound.Play();
                 if (toggle == true)
                 {
                     switchAnim.ResetTrigger("off");

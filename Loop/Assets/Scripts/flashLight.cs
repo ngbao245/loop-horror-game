@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class flashlight : MonoBehaviour
 {
     public GameObject light;
     public bool toggle;
-    public AudioSource toggleSound;
+    public AudioSource flashLightOFF, flashLightON;
 
     void Start()
     {
@@ -25,13 +26,14 @@ public class flashlight : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             toggle = !toggle;
-            //toggleSound.Play();
             if (toggle == false)
             {
+                flashLightOFF.Play();
                 light.SetActive(false);
             }
             if (toggle == true)
             {
+                flashLightON.Play();
                 light.SetActive(true);
             }
         }
