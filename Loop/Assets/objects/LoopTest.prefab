@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6953382089537049234}
   - component: {fileID: 8705510965614069051}
+  - component: {fileID: 3117109550371216519}
   m_Layer: 0
   m_Name: LoopTest
   m_TagString: Untagged
@@ -53,3 +54,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 8.336273}
   m_Center: {x: 0, y: 0, z: 0.0023727417}
+--- !u!114 &3117109550371216519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7790599063415420478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e66a6009990b7f4ab40f25201582668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Scene2
