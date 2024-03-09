@@ -25,10 +25,17 @@ public class LightFlickerTrigger : MonoBehaviour
     private Animator ghostAnimator;
     public float ghostMoveTowardsDuration;
 
+    public AudioSource ghostAudioSource;
+    public GameObject flashlight;
+    public GameObject light;
+    flashlight flash;
+
     void Start()
     {
         defaultIntensity = myLight.intensity;
         ghostAnimator = ghost.GetComponent<Animator>();
+        ghostAudioSource = ghost.GetComponent<AudioSource>();
+        flash = flashlight.GetComponent<flashlight>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +43,15 @@ public class LightFlickerTrigger : MonoBehaviour
         if (!isFlickering)
         {
             StartFlicker();
+            flash.flashLightOFF.Play();
+            light.SetActive(false);
         }
+    }
+
+    void StartFlicker()
+    {
+        isFlickering = true;
+        flickerTimer = 0f;
     }
 
     void Update()
@@ -96,6 +111,7 @@ public class LightFlickerTrigger : MonoBehaviour
         ghost.SetActive(true);
 
         StartCoroutine(MoveTowardsPlayer());
+
     }
 
     IEnumerator MoveTowardsPlayer()
@@ -109,7 +125,12 @@ public class LightFlickerTrigger : MonoBehaviour
         ghost.transform.rotation = initialRotation;
 
         //Wait for seconds before running towards the player
-        yield return new WaitForSeconds(1.5f);
+
+        yield return new WaitForSeconds(1f);
+
+        ghostAudioSource.Play();
+
+        yield return new WaitForSeconds(0.5f);
 
         ghostAnimator.SetTrigger("Run");
 
@@ -125,18 +146,26 @@ public class LightFlickerTrigger : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0f, directionToPlayer.z), Vector3.up);
             ghost.transform.rotation = Quaternion.Slerp(ghost.transform.rotation, targetRotation, journeyFraction);
 
+
             yield return null;
         }
 
         // Ensure the ghost reaches the player's position and Y-rotation exactly
         ghost.transform.position = targetPosition;
         ghost.transform.LookAt(new Vector3(player.transform.position.x, ghost.transform.position.y, player.transform.position.z));
+
+        // Turning off for 1.5 seconds
+        myLight.intensity = 0f;
+        lightBulb.material = offlight;
+
+        yield return new WaitForSeconds(2.5f);
+
+        Destroy(ghost);
+        Destroy(gameObject);
+
+        myLight.intensity = defaultIntensity;
+        lightBulb.material = onlight;
+
     }
 
-
-    void StartFlicker()
-    {
-        isFlickering = true;
-        flickerTimer = 0f;
-    }
 }
