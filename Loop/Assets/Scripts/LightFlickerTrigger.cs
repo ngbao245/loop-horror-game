@@ -30,6 +30,9 @@ public class LightFlickerTrigger : MonoBehaviour
     public GameObject light;
     flashlight flash;
 
+    public Renderer wall;
+    public Material wallMaterial;
+
     void Start()
     {
         defaultIntensity = myLight.intensity;
@@ -165,6 +168,8 @@ public class LightFlickerTrigger : MonoBehaviour
 
         myLight.intensity = defaultIntensity;
         lightBulb.material = onlight;
+
+        wall.material = wallMaterial;
 
     }
 
