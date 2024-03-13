@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frame_Material
+  m_Name: s2 1
   m_Shader: {fileID: 4800000, guid: 4c81ed1c512a84e4285b39eaab006f91, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -151,7 +151,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BloodAmount: 0
+    - _BloodAmount: 0.2
     - _Blood_FlowIntensity: 0
     - _BulgeShape: 1
     - _BumpScale: 1
