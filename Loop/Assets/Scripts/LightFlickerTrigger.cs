@@ -133,7 +133,7 @@ public class LightFlickerTrigger : MonoBehaviour
 
         //Wait for seconds before running towards the player
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         ghostAudioSource.Play();
 
@@ -166,7 +166,7 @@ public class LightFlickerTrigger : MonoBehaviour
         lightBulb.material = offlight;
 
         yield return new WaitForSeconds(2f);
-        
+
         Destroy(ghost);
 
         myLight.intensity = defaultIntensity;
@@ -175,11 +175,6 @@ public class LightFlickerTrigger : MonoBehaviour
         wall.material = wallMaterial;
 
         heartBeatSound.Play();
-        yield return new WaitForSeconds(3f);
-        if (heartBeatSound.isPlaying)
-        {
-            heartBeatSound.Stop();
-        }
 
         if (playerFreeze != null)
         {
