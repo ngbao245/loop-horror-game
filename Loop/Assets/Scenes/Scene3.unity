@@ -25494,8 +25494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aeed05c4e0ed5d45a9e3421946a2d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intText: {fileID: 0}
-  sound: {fileID: 0}
+  intText: {fileID: 170627993}
+  sound: {fileID: 914673252}
   interactable: 0
 --- !u!65 &939219324
 BoxCollider:

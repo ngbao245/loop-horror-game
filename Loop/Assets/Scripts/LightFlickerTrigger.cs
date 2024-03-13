@@ -25,7 +25,7 @@ public class LightFlickerTrigger : MonoBehaviour
     private Animator ghostAnimator;
     public float ghostMoveTowardsDuration;
 
-    public AudioSource ghostAudioSource;
+    public AudioSource ghostAudioSource, heartBeatSound;
     public GameObject flashlight;
     public GameObject light;
     flashlight flash;
@@ -94,11 +94,6 @@ public class LightFlickerTrigger : MonoBehaviour
                 flickerTimer = 0f;
                 isFlickering = false;
 
-                if (playerFreeze != null)
-                {
-                    playerFreeze.enabled = true;
-                }
-
                 // Notify the callback that flickering is complete
                 if (flickerCompleteCallback != null)
                 {
@@ -161,16 +156,19 @@ public class LightFlickerTrigger : MonoBehaviour
         myLight.intensity = 0f;
         lightBulb.material = offlight;
 
-        yield return new WaitForSeconds(2.5f);
-
+        yield return new WaitForSeconds(2f);
+        if (playerFreeze != null)
+        {
+            playerFreeze.enabled = true;
+        }
         Destroy(ghost);
         Destroy(gameObject);
+
+        heartBeatSound.Play();
 
         myLight.intensity = defaultIntensity;
         lightBulb.material = onlight;
 
         wall.material = wallMaterial;
-
     }
-
 }

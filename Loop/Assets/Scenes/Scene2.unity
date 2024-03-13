@@ -24793,8 +24793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aeed05c4e0ed5d45a9e3421946a2d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intText: {fileID: 0}
-  sound: {fileID: 0}
+  intText: {fileID: 170627993}
+  sound: {fileID: 7290309701713656284}
   interactable: 0
 --- !u!65 &939219324
 BoxCollider:
@@ -58093,6 +58093,11 @@ AudioSource:
 --- !u!4 &7290309701713656283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8776348387528827892, guid: 338fcd748020d2941987365d2e7e94f0, type: 3}
+  m_PrefabInstance: {fileID: 7290309701713656279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7290309701713656284 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5975733988897580075, guid: 338fcd748020d2941987365d2e7e94f0, type: 3}
   m_PrefabInstance: {fileID: 7290309701713656279}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &7352628374744286025
