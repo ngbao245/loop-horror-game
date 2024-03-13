@@ -11326,6 +11326,7 @@ MonoBehaviour:
   light: {fileID: 291475777}
   wall: {fileID: 1294707306}
   wallMaterial: {fileID: 2100000, guid: 991449fc1190f4d4c8dc6270ee026ee7, type: 2}
+  switchOff: {fileID: 1496690326}
 --- !u!65 &374551898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44768,7 +44769,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

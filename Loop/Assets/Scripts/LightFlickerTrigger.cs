@@ -33,12 +33,16 @@ public class LightFlickerTrigger : MonoBehaviour
     public Renderer wall;
     public Material wallMaterial;
 
+    public GameObject switchOff;
+    ONOFFSwitch lightSwitchOff;
+
     void Start()
     {
         defaultIntensity = myLight.intensity;
         ghostAnimator = ghost.GetComponent<Animator>();
         ghostAudioSource = ghost.GetComponent<AudioSource>();
         flash = flashlight.GetComponent<flashlight>();
+        lightSwitchOff = switchOff.GetComponent<ONOFFSwitch>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -61,6 +65,12 @@ public class LightFlickerTrigger : MonoBehaviour
     {
         if (isFlickering)
         {
+            if (lightSwitchOff.toggle == true)
+            {
+                lightSwitchOff.toggle = false;
+            }
+
+
             // Freeze the character by disabling the movement script
             if (playerFreeze != null)
             {
@@ -103,13 +113,22 @@ public class LightFlickerTrigger : MonoBehaviour
         }
     }
 
+    IEnumerator HeartBeat()
+    {
+        heartBeatSound.Play();
+        yield return new WaitForSeconds(3f);
+        if (heartBeatSound.isPlaying)
+        {
+            heartBeatSound.Stop();
+        }
+    }
+
     void ActivateGhost()
     {
         // Implement ghost appearance logic here
         ghost.SetActive(true);
 
         StartCoroutine(MoveTowardsPlayer());
-
     }
 
     IEnumerator MoveTowardsPlayer()
@@ -157,18 +176,26 @@ public class LightFlickerTrigger : MonoBehaviour
         lightBulb.material = offlight;
 
         yield return new WaitForSeconds(2f);
-        if (playerFreeze != null)
-        {
-            playerFreeze.enabled = true;
-        }
+        
         Destroy(ghost);
-        Destroy(gameObject);
-
-        heartBeatSound.Play();
 
         myLight.intensity = defaultIntensity;
         lightBulb.material = onlight;
 
         wall.material = wallMaterial;
+
+        heartBeatSound.Play();
+        yield return new WaitForSeconds(3f);
+        if (heartBeatSound.isPlaying)
+        {
+            heartBeatSound.Stop();
+        }
+
+        if (playerFreeze != null)
+        {
+            playerFreeze.enabled = true;
+        }
+
+        Destroy(gameObject);
     }
 }
