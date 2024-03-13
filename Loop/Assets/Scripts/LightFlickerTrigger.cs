@@ -113,16 +113,6 @@ public class LightFlickerTrigger : MonoBehaviour
         }
     }
 
-    IEnumerator HeartBeat()
-    {
-        heartBeatSound.Play();
-        yield return new WaitForSeconds(3f);
-        if (heartBeatSound.isPlaying)
-        {
-            heartBeatSound.Stop();
-        }
-    }
-
     void ActivateGhost()
     {
         // Implement ghost appearance logic here
