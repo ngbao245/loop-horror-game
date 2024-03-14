@@ -5,7 +5,7 @@ using UnityEngine;
 public class StartingScreen : MonoBehaviour
 {
     private GameObject player;
-    public GameObject startingScreen;
+    public GameObject startingScreen, hint;
 
     public float waitTime;
 
@@ -23,5 +23,6 @@ public class StartingScreen : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         startingScreen.SetActive(false);
         player.GetComponent<FPSController>().enabled = true;
+        hint.SetActive(true);
     }
 }

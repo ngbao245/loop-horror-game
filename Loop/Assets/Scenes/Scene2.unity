@@ -14569,6 +14569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingScreen: {fileID: 1269028314}
+  hint: {fileID: 0}
   waitTime: 4.5
 --- !u!4 &517297662
 Transform:
@@ -30418,6 +30419,8 @@ MonoBehaviour:
   flashlight_hand: {fileID: 1147199041}
   pickup: {fileID: 1397906545}
   interactable: 0
+  hintKey: {fileID: 0}
+  hintFL: {fileID: 0}
 --- !u!54 &1163399316
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32961,7 +32964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6953382089537049234, guid: bba68e7fa02e3c74db2a625df7fd7367, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 48.94
+      value: 49.94
       objectReference: {fileID: 0}
     - target: {fileID: 6953382089537049234, guid: bba68e7fa02e3c74db2a625df7fd7367, type: 3}
       propertyPath: m_LocalRotation.w
@@ -33021,6 +33024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: Scene3
+  hintKey: {fileID: 0}
 --- !u!1 &1248865404
 GameObject:
   m_ObjectHideFlags: 0
