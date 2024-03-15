@@ -180,7 +180,10 @@ public class LightFlickerTrigger : MonoBehaviour
         {
             playerFreeze.enabled = true;
         }
-
+        if (light.active == false)
+        {
+            light.active = true;
+        }
         Destroy(gameObject);
     }
 }

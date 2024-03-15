@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pickupFlashlight : MonoBehaviour
+public class pickupFlashlight1 : MonoBehaviour
 {
     public GameObject inttext, flashlight_table, flashlight_hand;
     public AudioSource pickup;
     public bool interactable;
+    public GameObject hintTurnOnFL, hintFL;
 
     void OnTriggerStay(Collider other)
     {
@@ -35,6 +36,8 @@ public class pickupFlashlight : MonoBehaviour
                 pickup.Play();
                 flashlight_hand.SetActive(true);
                 flashlight_table.SetActive(false);
+                hintTurnOnFL.SetActive(true);
+                hintFL.SetActive(false);
             }
         }
     }

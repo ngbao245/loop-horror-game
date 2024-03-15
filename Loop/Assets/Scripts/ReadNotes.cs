@@ -53,5 +53,7 @@ public class ReadNotes : MonoBehaviour
     {
         noteUI.SetActive(false);
         player.GetComponent<FPSController>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

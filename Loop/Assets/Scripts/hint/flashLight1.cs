@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class flashlight : MonoBehaviour
+public class flashlight1 : MonoBehaviour
 {
-    public GameObject light;
+    public GameObject light, hintKey, hintTurnOnFL;
     public bool toggle;
     public AudioSource flashLightOFF, flashLightON;
+    private int count = 0;
 
     void Start()
     {
@@ -25,6 +26,12 @@ public class flashlight : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
+            if (count <= 0)
+            {
+                hintTurnOnFL.SetActive(false);
+                hintKey.SetActive(true);
+                count++;
+            }
             toggle = !toggle;
             if (toggle == false)
             {
