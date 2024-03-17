@@ -9,24 +9,18 @@ public class LoopManager : MonoBehaviour
 
     private bool isTransitioning = false;
 
+    public GameObject fadeout;
+
+
     private void OnTriggerEnter(Collider other)
     {
-            SceneManager.LoadScene(nextSceneName);
-
+        StartCoroutine(Fadeout());
     }
 
-    private IEnumerator LoadNextSceneAsync()
+    IEnumerator Fadeout()
     {
-        // Load the next scene asynchronously
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(nextSceneName);
-
-        // Wait until the next scene is fully loaded
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
-
-        // Reset the flag after the scene is loaded
-        isTransitioning = false;
+        fadeout.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(nextSceneName);
     }
 }
