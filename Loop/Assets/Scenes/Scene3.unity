@@ -8752,8 +8752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9dde4a690ed2f044a14be816a882b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 2
-  runningSpeed: 30
+  walkingSpeed: 3.5
+  runningSpeed: 6
   jumpSpeed: 0
   gravity: 20
   playerCamera: {fileID: 1371058435}
@@ -35844,7 +35844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013921041132, guid: 220e978f345d61a4e9364418ea029377, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.63
+      value: 5.62
       objectReference: {fileID: 0}
     - target: {fileID: 4000013921041132, guid: 220e978f345d61a4e9364418ea029377, type: 3}
       propertyPath: m_LocalRotation.w
@@ -45247,7 +45247,7 @@ RectTransform:
   m_GameObject: {fileID: 1316562682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.396, y: 1.396, z: 1.396}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 764426763}
@@ -55347,7 +55347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013921041132, guid: 220e978f345d61a4e9364418ea029377, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.628
+      value: 5.62
       objectReference: {fileID: 0}
     - target: {fileID: 4000013921041132, guid: 220e978f345d61a4e9364418ea029377, type: 3}
       propertyPath: m_LocalRotation.w

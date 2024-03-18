@@ -1,99 +1,212 @@
 fileFormatVersion: 2
 guid: 2e7ceb9bdea64d749a31eaaf90027994
-timeCreated: 1488355604
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Door_01_Base
-    100002: //RootNode
-    100004: Wall_Door_01
-    100006: Windows_g
-    100008: Windows_r
-    100010: Ceiling
-    100012: Tile02
-    100014: Walli
-    100016: Tile01
-    400000: Door_01_Base
-    400002: //RootNode
-    400004: Wall_Door_01
-    400006: Windows_g
-    400008: Windows_r
-    400010: Ceiling
-    400012: Tile02
-    400014: Walli
-    400016: Tile01
-    2300000: Door_01_Base
-    2300002: Wall_Door_01
-    2300004: Windows_g
-    2300006: Windows_r
-    2300008: Ceiling
-    2300010: Tile02
-    2300012: Walli
-    2300014: Tile01
-    3300000: Door_01_Base
-    3300002: Wall_Door_01
-    3300004: Windows_g
-    3300006: Windows_r
-    3300008: Ceiling
-    3300010: Tile02
-    3300012: Walli
-    3300014: Tile01
-    4300000: Door_01_Base
-    4300002: Wall_Door_01
-    4300004: Windows_g
-    4300006: Windows_r
-    4300008: Ceiling
-    4300010: Tile02
-    4300012: Walli
-    4300014: Tile01
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Door_01_Base
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: Wall_Door_01
+  - first:
+      1: 100006
+    second: Windows_g
+  - first:
+      1: 100008
+    second: Windows_r
+  - first:
+      1: 100010
+    second: Ceiling
+  - first:
+      1: 100012
+    second: Tile02
+  - first:
+      1: 100014
+    second: Walli
+  - first:
+      1: 100016
+    second: Tile01
+  - first:
+      4: 400000
+    second: Door_01_Base
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Wall_Door_01
+  - first:
+      4: 400006
+    second: Windows_g
+  - first:
+      4: 400008
+    second: Windows_r
+  - first:
+      4: 400010
+    second: Ceiling
+  - first:
+      4: 400012
+    second: Tile02
+  - first:
+      4: 400014
+    second: Walli
+  - first:
+      4: 400016
+    second: Tile01
+  - first:
+      23: 2300000
+    second: Door_01_Base
+  - first:
+      23: 2300002
+    second: Wall_Door_01
+  - first:
+      23: 2300004
+    second: Windows_g
+  - first:
+      23: 2300006
+    second: Windows_r
+  - first:
+      23: 2300008
+    second: Ceiling
+  - first:
+      23: 2300010
+    second: Tile02
+  - first:
+      23: 2300012
+    second: Walli
+  - first:
+      23: 2300014
+    second: Tile01
+  - first:
+      33: 3300000
+    second: Door_01_Base
+  - first:
+      33: 3300002
+    second: Wall_Door_01
+  - first:
+      33: 3300004
+    second: Windows_g
+  - first:
+      33: 3300006
+    second: Windows_r
+  - first:
+      33: 3300008
+    second: Ceiling
+  - first:
+      33: 3300010
+    second: Tile02
+  - first:
+      33: 3300012
+    second: Walli
+  - first:
+      33: 3300014
+    second: Tile01
+  - first:
+      43: 4300000
+    second: Door_01_Base
+  - first:
+      43: 4300002
+    second: Wall_Door_01
+  - first:
+      43: 4300004
+    second: Windows_g
+  - first:
+      43: 4300006
+    second: Windows_r
+  - first:
+      43: 4300008
+    second: Ceiling
+  - first:
+      43: 4300010
+    second: Tile02
+  - first:
+      43: 4300012
+    second: Walli
+  - first:
+      43: 4300014
+    second: Tile01
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -103,14 +216,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
